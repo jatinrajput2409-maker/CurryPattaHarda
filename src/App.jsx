@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import PageWrapper from './components/layout/PageWrapper';
@@ -7,7 +7,7 @@ import AppRoutes from './routes';
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="flex flex-col min-h-screen bg-brand-cream text-brand-charcoal">
         <Navbar />
         <PageWrapper>
@@ -15,6 +15,6 @@ export default function App() {
         </PageWrapper>
         <Footer />
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
